@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji Memory Match</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-wrapper">
+    <header class="game-header">
+      <h1>Emoji Memory Match</h1>
+      <p class="subtitle">Find all matching emoji pairs!</p>
+    </header>
+
+    <section class="game-controls" aria-label="Game controls">
+      <p class="moves">Moves: <span id="move-count">0</span></p>
+      <button id="restart-button" type="button">Restart Game</button>
+    </section>
+
+    <p id="win-message" class="win-message" aria-live="polite"></p>
+
+    <section id="game-board" class="game-board" aria-label="Memory card game board"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
